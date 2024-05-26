@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Movie Recommendation System</title>
+  <title>Samanvay</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -19,8 +19,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/css/autoComplete.min.css">
   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
   <script type="text/javascript">
-    var films = {{suggestions|tojson}};
+    var films = {{ suggestions | tojson }};
   </script>
+
 
 </head>
 
@@ -40,7 +41,7 @@
 			  fill="currentColor" class="octo-body"></path>
 		      </svg>
 		    </a>
-    <center><h1 style=""> Movie Recommendation System</h1></center>
+    <center><h1 style="">Samanvay - Movie recommendation system</h1></center>
     <div class="form-group shadow-textarea" style="margin-top: 30px;text-align: center;color: white;">
         <input type="text" name="movie" class="movie form-control" id="autoComplete" autocomplete="off" placeholder="Enter the Movie Name" style="background-color: #ffffff;border-color:#ffffff;width: 60%;color: #181818" required="required" />
         <br>
